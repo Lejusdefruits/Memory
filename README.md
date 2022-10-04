@@ -6,6 +6,7 @@
 - [ ] check_finish.py
 - [ ] show_game_board.py
 - [ ] memory.py
+
 ###Contributors:
 >Alexander Haile
 >>playing_board_init.py
