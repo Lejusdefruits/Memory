@@ -32,4 +32,4 @@
 >>edit_card_status.py
 
 
-You can also find all files of this project on [this page](https://github.com/Lejusdefruits).
+You can also find all files of this project on [this page](https://github.com/Lejusdefruits/Memory).
