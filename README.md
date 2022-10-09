@@ -1,36 +1,35 @@
 #Memory Project progress:
-- [ ] playing_board_init.py
-- [ ] IHM_take_player_choice.py
-- [ ] edit_card_status.py
-- [ ] verify_card_equality.py
-- [ ] check_finish.py
-- [ ] show_game_board.py
+- [ ] initialisation_plateau_de_jeu.py
+- [ ] IHM_choix_joueur.py
+- [ ] changer_statut_cartes.py
+- [ ] verifier_egalite_cartes.py
+- [ ] verifier_fin.py
+- [ ] afficher_plateu_de_jeu.py
 - [ ] memory.py
 
 ###Contributors:
+
 >Alexander Haile
->>playing_board_init.py
+>>initialisation_plateau_de_jeu.py
 > 
->>show_game_board.py
+>>afficher_plateu_de_jeu.py
 
 >Louison Bréant
->>IHM_take_player_choice.py
+>>IHM_choix_joueur.py
 > 
->>check_finish.py
+>>verifier_fin.py
 
 >Julien Brousse
->> memory.py
->
->>docstring & doctest of all functions
+>>memory.py
 > 
 >>Github page
 > 
 >>README.md 
 
 >Kamal Blk
->>verify_card_equality.py
+>>verifier_egalite_cartes.py
 > 
->>edit_card_status.py
+>>changer_statut_cartes.py
 
 
 You can also find all files of this project on [this page](https://github.com/Lejusdefruits/Memory).
