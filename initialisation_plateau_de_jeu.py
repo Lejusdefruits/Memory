@@ -1,8 +1,8 @@
 def initialisation_plateau_de_jeu(longueur, largeur):
     from random import shuffle
     """
-    Cette fonction va créer un plateau de jeu constitué de cartes aléatoirement placées sur le plateau. Cette fonction prend en argument 'largeur' et 'longueur', 
-        qui définiront respectement la largeur et la longueur du platerau de jeu et donc le nombre de cartes. 
+    Cette fonction va créer un plateau de jeu constitué de cartes aléatoirement placées sur le plateau. Cette fonction prend en argument 'largeur' et 'longueur',
+        qui définiront respectement la largeur et la longueur du plateau de jeu et donc le nombre de cartes pour renvoyer 'plateau_base' et 'etat_cartes'. 
 
     Parameters
     ----------
@@ -16,13 +16,15 @@ def initialisation_plateau_de_jeu(longueur, largeur):
     -------
         plateau_base: Le plateau généré aléatoirement en fonction des dimensions 'largeur' et 'hauteur'
             type: list
+        etat_cartes: un dictionnaire contennant l'etat de chaque carte(face visible, devinée ou retournée)
+            type: dict
 
 
     Exemples
     --------
-    >>>len(initialisation_plateau_de_jeu(5, 2))
+    >>>len(initialisation_plateau_de_jeu(5, 2)[0])
     5
-    >>>len(initialisation_plateau_de_jeu(4, 3)[0])
+    >>>len(initialisation_plateau_de_jeu(4, 3)[0][0])
     3
     
     """
@@ -37,14 +39,14 @@ def initialisation_plateau_de_jeu(longueur, largeur):
     assert type(longueur) == int
     assert largeur*longueur % 2 == 0
 
-    liste_cartes = [i for i in range(int(longueur*largeur/2))]*2
-    shuffle(liste_cartes)
-    plateau_base = [[liste_cartes[j*i] for j in range(largeur)] for i in range(longueur)]
+    #liste_cartes = [i for i in range(int(longueur*largeur/2))]*2
+    #shuffle(liste_cartes)
+    #plateau_base = [[liste_cartes[j*i] for j in range(largeur)] for i in range(longueur)]
 
     #---Postconditions---
     assert type(plateau_base) == list
 
-    return plateau_base
+    return plateau_base, etat_cartes
 
 # =============================================================================
 # test de la fonction

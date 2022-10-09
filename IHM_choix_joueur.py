@@ -1,37 +1,36 @@
-"""
+def IHM_choix_joueur(etat_carte):
+    """
+    Cette fonction demande au joueur de choisir une carte à retourner en prenant en argument l'état des cartes(face visible, devinée ou retournée)
+
+    Parameters
+    ----------
 
 
-Parameters
-----------
+    Returns
+    -------
 
 
 
-Returns
--------
+    Exemples
+    --------
+
+    >>>
+
+    >>>
 
 
 
-Exemples
---------
+    """
 
->>>
-
->>>
-
->>>
+    # ============
+    # ----Code----
+    # ============
 
 
-"""
-
-# ============
-# ----Code----
-# ============
+    #---Préconditions---
 
 
-#---Préconditions---
-
-
-#---Postconditions---
+    #---Postconditions---
 
 
 
