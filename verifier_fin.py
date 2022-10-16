@@ -11,19 +11,17 @@ def verifier_fin(etat_cartes):
 
     Returns
     -------
-    response: response contient True si l'etat de toutes les cartes se trouve être devinée, False sinon.
+    reponse: response contient True si l'etat de toutes les cartes se trouve être devinée, False sinon.
         type: bool
 
 
     Exemples
     --------
 
-    >>>verifier_fin(["face visible", "devinée", "devinée", "retournée"])
+    >>> verifier_fin(["face visible", "devinée", "devinée", "retournée"])
     False
-    >>>verifier_fin(["devinée", "devinée", "devinée", "devinée"])
+    >>> verifier_fin(["devinée", "devinée", "devinée", "devinée"])
     True
-
-
 
     """
 
@@ -35,10 +33,18 @@ def verifier_fin(etat_cartes):
     #---Préconditions---
     assert type(etat_cartes) == list
     assert len(etat_cartes) != 0
-
+    
+    reponse = True
+    for elt in etat_cartes:
+        if elt != "devinée":
+            reponse = False
+    
+    
     #---Postconditions---
-    assert type(response) == bool
+    assert type(reponse) == bool
 
+    #---Returns---
+    return reponse
 
 # =============================================================================
 # test de la fonction

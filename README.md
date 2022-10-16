@@ -1,13 +1,14 @@
-#Memory Project progress:
-- [ ] initialisation_plateau_de_jeu.py
-- [ ] IHM_choix_joueur.py
-- [ ] changer_statut_cartes.py
-- [ ] verifier_egalite_cartes.py
-- [ ] verifier_fin.py
-- [ ] afficher_plateu_de_jeu.py
-- [ ] memory.py
+# Memory Project progress:
+- [X] initialisation_plateau_de_jeu.py
+- [X] IHM_choix_joueur.py
+- [X] changer_statut_cartes.py
+- [X] verifier_egalite_cartes.py
+- [X] verifier_fin.py
+- [X] afficher_plateu_de_jeu.py
+- [X] retourner_cartes_non_devinees.py
+- [X] memory.py
 
-###Contributors:
+## Contributors:
 
 >Alexander Haile
 >>initialisation_plateau_de_jeu.py
@@ -25,6 +26,8 @@
 >>Github page
 > 
 >>README.md 
+> 
+> >retourner_cartes_non_devinees.py
 
 >Kamal Blk
 >>verifier_egalite_cartes.py
