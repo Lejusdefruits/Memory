@@ -34,7 +34,7 @@ def initialisation_plateau_de_jeu(longueur, largeur):
 
     liste_cartes = [i for i in range(int(longueur * largeur / 2))] * 2
     shuffle(liste_cartes)
-    plateau_base = [[liste_cartes[i+j] for j in range(largeur)] for i in range(len(liste_cartes), largeur)]
+    plateau_base = [[liste_cartes[i+j] for j in range(largeur)] for i in range(0, len(liste_cartes), largeur)]
     etat_cartes = [['retournée' for j in range(largeur)] for i in range(0, len(liste_cartes), largeur)]
 
     #---Postconditions---
