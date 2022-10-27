@@ -41,7 +41,6 @@ def verifier_egalite_cartes(etat_cartes, liste_cartes):
             if etat_cartes[i][j] == 'face visible':
                 cartes_face_visible.append([liste_cartes[i][j], i, j])
 
-    
     if cartes_face_visible[0][0] == cartes_face_visible[1][0]:  #les deux cartes retournée doivent être les mêmes
             answer = True
             

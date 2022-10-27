@@ -13,13 +13,15 @@ def afficher_plateau_de_jeu(etats_cartes, liste_cartes):
     # ============
     # ----Code----
     # ============
-
-    liste_a_afficher = liste_cartes.deepcopy()
+    liste_a_afficher = [[None for j in range(len(etats_cartes[0]))] for i in range(len(etats_cartes))]
     for i in range(len(liste_cartes)):
         for j in range(len(liste_cartes[0])):
             if etats_cartes[i][j] == 'retournée':
                 liste_a_afficher[i][j] = 'X'
+            else:
+                liste_a_afficher[i][j] = liste_cartes[i][j]
 
 
     for element in liste_a_afficher:
         print(element)
+    print('\n')

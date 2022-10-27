@@ -41,6 +41,8 @@ def retourner_cartes_non_devinees(etat_cartes):
     assert type(nouvel_etat_cartes) == list
     assert len(nouvel_etat_cartes) == len(etat_cartes)
 
+    print("\nLes 2 cartes retournées n'étaient pas les mêmes\n")
+    timeout = input("Appuyez sur entrée pour continuer...")
     return nouvel_etat_cartes
 
 
